@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: url(images/vjeranski.jpg);
+}
+h1{
+    background-color: wheat;
+    font-family: "Century Gothic";
+    text-align: center;
+    margin-top :200px auto;
+    font-size :53px;
+    color:  rgb(255, 189, 103);
+ }
+
+#game{
+    width: 1000px;
+    height: 550px;
+    border:1px solid #000;
+    background: url(images/shopmal.jpg);
+    margin:120px auto;
+    position: relative;
+    overflow:hidden;
+    border:5px solid rgb(255, 189, 103);
+}
+#shopcar{
+    position: absolute;
+    width: 73px;
+    height: 69px; /*kullan javascripte*/
+    background: url(images/shopcar.png);
+    bottom:0;
+}
+.shopcar-animate{
+    animation: shopcar .4s linear;
+}
+ 
+#carrierbag{
+    position: absolute;
+    width: 60px;
+    height: 60px; /*kullan javaScript*/
+    background: url(images/carrier\ bag.jpg);
+    bottom: 0px;
+    left:760px;
+}
+.carrierbag-animate{
+    animation: carrierbag 3s linear infinite;
+}
+ 
+@keyframes carrierbag{
+    0%{left:760px;}
+    100%{left:-40px}
+}
+@keyframes shopcar{
+    0%{bottom:0px;}
+    25%{bottom:120px;}
+    75%{bottom:150px;}
+    100%{bottom:0px;}
+ 
+}
+.return a {
+
+    font-family: "Century Gothic";
+    text-align: center;
+    background-color: white;
+    font-size: 22px;
+}
